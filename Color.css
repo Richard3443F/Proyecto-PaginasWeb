@@ -1,0 +1,258 @@
+#principal{
+	width: 900px;
+	height: auto;overflow: hidden;
+	border: 1px solid #000;
+	margin: auto;
+	background: #1DADE9; 
+}
+ header{
+ 	width:900px;
+ 	height:100px;
+ 	border:1px solid#000;
+ }
+ #logo{
+ 	width:200px;
+ 	height:100px;
+ 	border:1px solid#1000;
+ 	float:left;
+ }
+ .menu{
+ 	width:700px;
+ 	height:40px;
+ 	border:1px solid#ccc;
+ 	float:right;
+ 	margin-top:40px;
+ 	background:#28E6F4; 
+ }
+ menu ul{}
+ 	.menu ul li{
+ 		list-style:none;
+ 		float:right; 
+ 	}
+ 	.menu ul li a{
+ 		text-decoration:none;
+ 		padding:10px 15;
+ 		border:0px solid#ccc;
+ 		color:#E55E15;   
+ 	}
+ 	#categorias{
+ 		width:900px;
+ 		height:auto;overflow:hidden;
+ 		border:0px solid;
+ 		margin-top:10px;     
+ 	}
+ 	.uno{
+ 		width: 200px;
+ 		height:auto;overflow:hidden;
+ 		border:1px solid#ccc;
+ 		float:left;
+ 		padding:2px;
+ 		text-align:center; 
+ 		margin-right:10px;
+ 		margin-left:10px;     
+ 	}
+ 	.leer-mas{
+ 		text-decoration:none;
+ 		border:1px solid #006699;
+ 		padding:10px 20px 10px 20px;
+ 		margin:5px;
+ 		margin-top:5px;    
+ 	}
+ 	.leer-mas:hover{
+ 		background:#006699;
+ 		color:#ffff;
+ 		transition:background 1s, color 1s;
+
+ 	}
+ 	.container{
+ 		margin:auto;
+ 		background-color:white:
+ 		width:800px;
+ 		padding:30px;  
+ 	}
+
+ 	ul,li{
+ 		margin: 0;
+ 		padding: 0;
+ 		list-style: none;
+ 	}
+
+ 	ul.slider{
+ 		position: relative;
+ 		width: 800px;
+ 		height: 300px;
+ 	}
+ 	ul.slider li{
+ 		position: absolute;
+ 		left: 0;
+ 		top: 0;
+ 		opacity: 1;
+ 		width: inherit;
+        height: inherit;
+        background-color: white;
+ 		transition: opacity .5s;
+ 	}
+ 	ul.slider li img{
+ 		width: 100%;
+ 		height: 300px;
+ 		object-fit: cover;
+ 	}
+ 	ul.slider li:first-child{
+ 		opacity: 1;
+ 	}
+ 	ul.slider li:target{
+ 		opacity: 1;
+ 	}
+ 	.menu2{
+ 		text-align: center;
+ 		margin: 20px;
+ 	}
+ 	.menu2 li{
+ 		display:inline-block;
+ 		text-align: center;
+ 	}
+    .menu2 li a{
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        background-color: grey;
+        padding: 10px;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        border-radius: 100%;
+    }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    padding: 15px;
+}
+.formulario{
+    background: #fff;
+    margin-top: 150px;
+    padding: 3px;
+}
+h1{
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+input[type="text"],
+input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+.button{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background:  #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background: cadetblue;
+}
+p{
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+      color: #1a2537;
+    font-weight: 600;
+}
+.link:hover{
+     color: cadetblue;
+}
+@media(min-width:768px)
+{
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -box-sizing: border-box;
+}
+
+body{
+}
+
+.navegacion{
+    width: 1000px;
+    margin: 30px auto;
+    background: #fff;
+}
+
+.navegacion ul{
+    list-style: none;
+}
+
+.menu > li{
+    /*position: relative*/
+    display: inline-block;
+}
+
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: #353535;
+    font-family: "Open sans";
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color:#CE7D35;
+    transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+    position: absolute;
+    background: #333333;
+    width: 7%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: "Open sans";
+    text-decoration: none;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
